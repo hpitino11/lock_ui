@@ -1,0 +1,36 @@
+/* urn_arrow.css
+   Styles for the Urn Arrow indicator panel.
+   Loaded alongside urn_arrow.js by the Deadlock addon system.
+   The script also applies inline styles as a fallback in case
+   this CSS file is not compiled/loaded.
+*/
+
+#UrnArrowIndicator {
+	position: absolute;
+	width: 28px;
+	height: 24px;
+	margin: 0px 4px 0px 4px;
+	vertical-align: middle;
+	horizontal-align: right;
+	flow-children: right;
+	opacity: 1.0;
+}
+
+#UrnArrowLabel {
+	font-size: 40px;
+	font-weight: bold;
+	color: #ffffff;
+	vertical-align: middle;
+	horizontal-align: right;
+	text-align: center;
+}
+
+/* Green phase – urn will spawn / is active on the green side */
+.urn-phase-green #UrnArrowLabel {
+	color: #00e676;
+}
+
+/* Yellow phase – urn will spawn / is active on the yellow side */
+.urn-phase-yellow #UrnArrowLabel {
+	color: #ffee00;
+}
