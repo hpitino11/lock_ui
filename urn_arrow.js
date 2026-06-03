@@ -127,7 +127,7 @@
 				s.deliverConfirmMs = 0;
 				s.prevMeterVis     = null;
 			}
-			return "green";
+			return "yellow";
 		}
 
 		var idx       = Math.floor((gameSec - URN_FIRST_SPAWN_SEC) / URN_INTERVAL_SEC);
